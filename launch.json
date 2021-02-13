@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest All - Prd",
+        "program": "${workspaceFolder}/node_modules/.bin/jest",
+        "env": { "NODE_ENV": "prd" },
+        "args": ["--runInBand"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest Current File - Prd",
+        "program": "${workspaceFolder}/node_modules/.bin/jest",
+        "env": { "NODE_ENV": "prd" },
+        "args": ["${relativeFile}"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest All - Stg",
+        "program": "${workspaceFolder}/node_modules/.bin/jest",
+        "env": { "NODE_ENV": "stg" },
+        "args": ["--runInBand"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        }
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Jest Current File - Stg",
+        "program": "${workspaceFolder}/node_modules/.bin/jest",
+        "env": { "NODE_ENV": "stg" },
+        "args": ["${relativeFile}"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "windows": {
+          "program": "${workspaceFolder}/node_modules/jest/bin/jest",
+        }
+      }
+    ]
+  }

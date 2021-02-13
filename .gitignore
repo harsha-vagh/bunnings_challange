@@ -1,0 +1,12 @@
+# Logs
+*.log
+
+node_modules
+
+*.jpg
+coverage
+.vscode/
+*.xml
+*.html
+*.csv
+test.js
